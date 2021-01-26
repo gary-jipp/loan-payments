@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = D:/Dev/React/loan-payments-react
+[submodule "server"]
+	path = server
+	url = D:/Dev/React/loan-payments-api
