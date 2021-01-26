@@ -1,0 +1,30 @@
+{
+  "name": "loan-payments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines":{
+    "node":"12.20.0",
+    "yarn":"1.22.10"
+  },
+  "scripts": {
+    "start": "yarn --cwd server start",
+    "build": "yarn --cwd client install && yarn --cwd client build",
+    "deploy": "cp -a client/build/. public",
+    "heroku-postbuild":"yarn build && yarn deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gary-jipp/loan-payments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gary-jipp/loan-payments/issues"
+  },
+  "homepage": "https://github.com/gary-jipp/loan-payments#readme",
+  "dependencies": {
+    "yarn": "^1.22.10"
+  }
+}
