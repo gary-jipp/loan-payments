@@ -8,8 +8,7 @@
     - `heroku git:remote -a <app-name>`
 - update any submodules that may have changed: 
     - `git submodule update`
-    - `git add .`
-    - `git commit -m 'Latest Version'`
+    - `git commit -m -a "Latest Version"`
     - `git push origin main`
 - verify on Git the submodules are the correct version
 - 
