@@ -8,8 +8,8 @@
     - `heroku git:remote -a <app-name>`
 - update any submodules that may have changed: 
     - Pull each changed module first
-        - `git push heroku master`
-    - Update project and push
+        - `git pull origin`
+    - Update this project and push
         - `git submodule update`
         - `git commit -a -m "Latest Version"`
         - `git push origin main`
@@ -17,3 +17,10 @@
 - when ready, push to Heroku:
     - `git push heroku main`
 
+If you make a change to a submodule
+- Do not change the code in this project
+- Make changes in the source project & push main branch
+- open this project and then update submodules
+- pull submodules
+- commit parent projet and push to Githb
+- Check submodule version to ensure it matches
